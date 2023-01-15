@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <style>
+        body {
+            background-color: #D3D3D3; /* set background color */
+            background-repeat: no-repeat;
+            background-position: center; /* center the background */
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin: 50px;">
+        <h1 style="margin-bottom: 20px; font-size: 36px;">URL Shortener</h1>
+        <form class="shorten-form" method="post" action="{{ url_for('shorten') }}">
+            <input style="width: 60%; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 2px solid #ccc; border-radius: 4px;" type="text" name="url" placeholder="Enter URL to shorten">
+            <input style="width: 20%; background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer;" type="submit" value="Shorten">
+        </form>
+    </div>
+</body>
+</html>
